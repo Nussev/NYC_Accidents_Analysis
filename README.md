@@ -43,10 +43,21 @@ I used MS SQL Server initially to get a general idea of the data, as well as to 
 ![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%235_exact_locations.png)
 -- Going to include an explanation, SQL query, and picture from Tableau
 
-7. What was the most common contributing factor
-8. What about fatal accidents specifically?
-9. What are the different levels of severity and distribution amongst them?
-10. What percent does each category represent out of the total?
+6. What was the most common contributing factor
+
+![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%236_contributing_factor.png)
+
+7. What about fatal accidents specifically?
+
+
+
+8. What are the different levels of severity and distribution amongst them?
+
+
+
+9. What percent does each category represent out of the total?
+
+
 
 
 
