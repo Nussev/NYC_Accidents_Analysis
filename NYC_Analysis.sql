@@ -1,66 +1,71 @@
--- Total accidents for each year
-select year(Date) as [Year], count(*) as total_year
+-- 1. Total accidents for each year
+select year(Date) as [Year],
+	   count(*) as total_count_year
 from [NYC].[dbo].[NYC]
 group by year(Date)
-order by [Year], total_year;
+order by [Year], total_count_year;
 
--- Number of Accidents per borough
-select Borough, count(*) as count_borough
+-- 2. Number of Accidents per borough
+select Borough, 
+	   count(*) as count_borough
 from [NYC].[dbo].[NYC] 
 where Borough IS NOT NULL
 group by Borough
 order by count_borough desc;
 
--- Number of Victims per Borough
-select Borough, sum(Persons_Killed + Persons_Injured) as Total_victims
+-- 3. Number of Victims per Borough
+select Borough, 
+	   sum(Persons_Killed + Persons_Injured) as Total_victims
 from [NYC].[dbo].[NYC]
 where Borough IS NOT NULL
 group by Borough 
 order by Total_victims desc;
 
--- Top 10 streets with the most accidents reported?
+-- 4. Top 10 streets with the most accidents reported?
 select TOP 10 count(*) as Num_Accidents, Street_Name
 from [NYC].[dbo].[NYC]
 group by Street_Name
 order by Num_Accidents desc;
 
--- Top 3 exact locations that have most accidents reported?
--- Going to use latitude/longitude to find exact location, then add Street Name to see correlation
-select count(*) as count_coordinates, Latitude, Longitude
+
+
+-- #5. Top 3 exact locations that have most accidents reported?
+select TOP 3 count(*) as count_coordinates,
+	   Latitude,
+	   Longitude
 from [NYC].[dbo].[NYC]
 where latitude is not null and longitude is not null
 group by latitude, longitude
 order by count_coordinates desc;
 
-
-
--- What was the most common contributing factor for the accidents reported?
-select Contributing_Factor, count(*) as factor_count
+-- #6 What was the most common contributing factor for the accidents reported?
+select Contributing_Factor,
+	   count(*) as factor_count
 from [NYC].[dbo].[NYC]
 group by Contributing_Factor
 order by factor_count desc;
 
--- What about for fatal accidents specifically?
-select Contributing_Factor, count(*) as fatal_count
+-- #7. What about for fatal accidents specifically?
+select Contributing_Factor,
+	   count(*) as fatal_count
 from [NYC].[dbo].[NYC]
-where Persons_Killed = 1 and Contributing_Factor IS NOT NULL
+where Persons_Killed >= 1 and Contributing_Factor IS NOT NULL
 group by Contributing_Factor
 order by fatal_count desc;
 
--- What are the different levels of severity and distribution amongst them?
--- What percent does each category represent out of the total
+-- #8. What are the different levels of severity and distribution amongst them?
 
 -- Going to create new column 'Total Victims' where I am adding Persons Injured + Persons Killed
--- Creating New Table to combine Persons Injured & Persons Killed
+-- Values in the column to be the sum of Persons Injured and Persons Killed, and treating Null values as 0;
 ALTER TABLE [NYC].[dbo].[NYC]
 ADD Total_Victims INT;
 
--- Computing the values in the column to be the sum of Persons Injured and Persons Killed, and treating Null values as 0;
 UPDATE [NYC].[dbo].[NYC]
 SET Total_Victims = ISNULL(Persons_Injured, 0) + ISNULL(Persons_Killed, 0);
 
+
 -- Using CASE to bin together specific number ranges as severity level
--- 0-1 Total Victims = Low; 2-4 Total Victims = Medium; 5< Total Victims = High
+-- 0-1 Total Victims = Low; 2-4 Total Victims = Medium; 4< Total Victims = High
 -- Began with this to start, and shortly realized I wont be able to group by the alias in that same query
 select
 	case
@@ -108,10 +113,8 @@ order by Accident_count desc;
 -- Once I went to look at the percentages of the total, I realized it would be sort of a pain to continually write
 -- the case statement over and over, and knew I could create a CTE to easily reference the case statement for the questions
 
-
-
 -- Had to look up structure of CTE to get some guidance for setting up the case within it
--- 1. Set it up like this and then wanted to take into account
+-- 1. Set it up like this and then wanted to take into account the percentages
 With category as (
 	select
 		case
@@ -126,7 +129,8 @@ select Severity,
 from category
 group by Severity;
 
--- 2. Got guidance on creating the percentages and then used this as the query, to use the cte if I need to
+-- #9. What percent does each category represent out of the total
+-- Got guidance on creating the percentages and then used this as the query, to use the cte if I need to
 -- do more analysis down the road
 
 With category as (
@@ -137,6 +141,7 @@ With category as (
 			else 'High'
 		end as Severity
 	from [NYC].[dbo].[NYC])
+
 select Severity,
 	   count(*) as Accident_count,
 	   cast(count(*) * 100.0 / sum(count(*)) over () as decimal(10, 2)) as Percentage
