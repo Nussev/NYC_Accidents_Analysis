@@ -36,7 +36,7 @@ I used MS SQL Server initially to get a general idea of the data, as well as to 
 
 4. Top 10 streets with the most accidents
 
-
+![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%234_Top10_streets.png)
 
 6. Top 3 locations that have the most accidents reported?
 -- Going to include an explanation, SQL query, and picture from Tableau
