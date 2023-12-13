@@ -20,5 +20,13 @@ I used the recommended analysis questions to guide my findings:
 4. Compare the % of total accidents by month.
 5. Break down the frequency by day of week and hour of day. When do accidents occur most frequently?
 
+## Results
+I used MS SQL Server initially to get a general idea of the data, as well as to see what are some of the leading results in certain columns.
+1. Total Accidents by Year
+
+
+
+2. 
+
 
 
