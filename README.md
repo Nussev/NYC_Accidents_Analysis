@@ -38,7 +38,9 @@ I used MS SQL Server initially to get a general idea of the data, as well as to 
 
 ![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%234_Top10_streets.png)
 
-6. Top 3 locations that have the most accidents reported?
+5. Top 3 locations that have the most accidents reported?
+
+![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%235_exact_locations.png)
 -- Going to include an explanation, SQL query, and picture from Tableau
 
 7. What was the most common contributing factor
