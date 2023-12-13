@@ -49,15 +49,17 @@ I used MS SQL Server initially to get a general idea of the data, as well as to 
 
 7. What about fatal accidents specifically?
 
-
+![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%237_fatal_factor.png)
 
 8. What are the different levels of severity and distribution amongst them?
 
-
+![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%238_pt2_category_query.png)
 
 9. What percent does each category represent out of the total?
 
+![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%239_Percentages_category.png)
 
+A. Time-Series Analysis
 
 
 
