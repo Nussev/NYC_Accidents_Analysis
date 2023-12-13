@@ -26,10 +26,13 @@ I used MS SQL Server initially to get a general idea of the data, as well as to 
 
 ![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%231_Total_Accidents.png)
 
+2. Number of Accidents per Borough:
 
-3. Number of Accidents per Borough
+![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%232_Borough_Accidents.png)
 
-4. Number of Victims per Borough
+3. Number of Victims per Borough
+
+
 
 5. Top 10 streets with the most accidents
 
