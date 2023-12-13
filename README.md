@@ -26,19 +26,19 @@ I used MS SQL Server initially to get a general idea of the data, as well as to 
 
 
 
-2. Number of Accidents per Borough
+3. Number of Accidents per Borough
 
-3. Number of Victims per Borough
+4. Number of Victims per Borough
 
-4. Top 10 streets with the most accidents
+5. Top 10 streets with the most accidents
 
-5. Top 3 locations that have the most accidents reported?
+6. Top 3 locations that have the most accidents reported?
 -- Going to include an explanation, SQL query, and picture from Tableau
 
-6. What was the most common contributing factor
-7. What about fatal accidents specifically?
-8. What are the different levels of severity and distribution amongst them?
-9. What percent does each category represent out of the total?
+7. What was the most common contributing factor
+8. What about fatal accidents specifically?
+9. What are the different levels of severity and distribution amongst them?
+10. What percent does each category represent out of the total?
 
 
 
