@@ -32,9 +32,11 @@ I used MS SQL Server initially to get a general idea of the data, as well as to 
 
 3. Number of Victims per Borough
 
+![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%233_Borough_victims.png)
+
+4. Top 10 streets with the most accidents
 
 
-5. Top 10 streets with the most accidents
 
 6. Top 3 locations that have the most accidents reported?
 -- Going to include an explanation, SQL query, and picture from Tableau
