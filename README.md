@@ -22,7 +22,8 @@ I used the recommended analysis questions to guide my findings:
 
 ## Results
 I used MS SQL Server initially to get a general idea of the data, as well as to see what are some of the leading results in certain columns.
-1. Total Accidents by Year
+1. Total Accidents by Year:
+
 ![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%231_Total_Accidents.png)
 
 
