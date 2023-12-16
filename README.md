@@ -21,9 +21,12 @@ I used the recommended analysis questions to guide my findings:
 5. Break down the frequency by day of week and hour of day. When do accidents occur most frequently?
 
 ## Results
-I used MS SQL Server initially to get a general idea of the data, as well as to see what are some of the leading results in certain columns. 
-Here I provided some of the SQL queries I ran to analyze the data and the Time-Series Analysis I condcuted in Tableau as well.
-Here are the links to the full SQL analysis and Tableau workbook.
+I used MS SQL Server initially to get a general idea of the data, as well as to see what are some of the leading results in certain columns.
+
+Here I provided some of the SQL queries I ran to analyze the data.
+Please refer to the link below to see my full analysis and descriptions on how I came to answer specific questions.
+![text](
+
 
 A. Total Accidents by Year:
 
@@ -49,6 +52,10 @@ D. What are the different levels of severity and distribution amongst them?
 
 ## Insights
 
+1. The majority of accidents occurred in the from Janaury - March (28.88%). It is important to note that this number is not fully up to date since data was only derived into April of 2023.
+2. Accidents and Injuries occurred most often from 4pm to 5pm, with unusual spikes at 12am & 8am.
+3. Brooklyn had the largest number of accdidents (76,416), with Queens having the second largest number of accidents (63,751).
+4. 91.38% of all accidents were classified as 'Low' severity, only having 0 to 1 victim (Injured or Killed) in the accident.
 
 ## Recommendations
 
