@@ -42,10 +42,13 @@ D. What are the different levels of severity and distribution amongst them?
 ![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%238_pt2_category_query.png)
 
 
-A. Time-Series Analysis
+1. Time-Series Analysis
+
+![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Tableau%20Charts/Time-Series.png)
 
 
 ## Insights
+
 
 ## Recommendations
 
