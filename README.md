@@ -25,9 +25,10 @@ I used MS SQL Server initially to get a general idea of the data, as well as to 
 
 Here I provided some of the SQL queries I ran to analyze the data.
 Please refer to the link below to see my full analysis and descriptions on how I came to answer specific questions.
+
 https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/NYC_Analysis.sql 
 
-
+<br />
 A. Total Accidents by Year:
 
 ![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%231_Total_Accidents.png)
