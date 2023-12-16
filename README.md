@@ -21,7 +21,10 @@ I used the recommended analysis questions to guide my findings:
 5. Break down the frequency by day of week and hour of day. When do accidents occur most frequently?
 
 ## Results
-I used MS SQL Server initially to get a general idea of the data, as well as to see what are some of the leading results in certain columns.
+I used MS SQL Server initially to get a general idea of the data, as well as to see what are some of the leading results in certain columns. 
+Here I provided some of the SQL queries I ran to analyze the data and the Time-Series Analysis I condcuted in Tableau as well.
+Here are the links to the full SQL analysis and Tableau workbook.
+
 1. Total Accidents by Year:
 
 ![text](https://github.com/Nussev/NYC_Accidents_Analysis/blob/main/Query%20Images/%231_Total_Accidents.png)
