@@ -1,7 +1,5 @@
 # <p align='center'>Analysis of New York City Traffic Accidents (Jan 2020 - Apr 2023)</p>
 
-## Overview:
-
 ## General Process
 * I accessed the dataset from Maven Analytics free Dataset collection (NYC Traffic Accidents)
 * Used SQL Server Management Studio (SSMS) to perform analysis and understand the dataset
