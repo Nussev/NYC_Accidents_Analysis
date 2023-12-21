@@ -69,5 +69,6 @@ D. What are the different levels of severity and distribution amongst them?
 ## What I would change in my Analysis Process
 1. I began by inputting the data in Tableau to mess around with and see basic visualizations, and then proceeded to do basic analysis in SQL. I wish I had began analyzing the data in SQL Server to see specific numbers, address Null values, and create/modify columns before putting into Tableau.
 2. Comparing boroughs is difficult due to varying population and land densities, so instead I focus one Borough, such as Manhattan, and dive deeper into the location analysis to see if there are specific hot-spots, such as tourist heavy areas and commuter routes in & out of Manhattan.
-3. Most the information I dervied could have been attained via SQL Server or Tableau without using the other, so I probably would have stuck to one or the other technology to do all the analysis. Regardless it was fun to make some charts and write some queries!
+3. More specific, but I would change the order of the 'Boroughs' on the Time-Series Analysis to be in a correlated order to the Borough-wise Victim Comparision chart, feel it would make it more clear. I would also make it more clear that the orange line in the Hourly Analysis of Collisions chart is Total Victims.
+4. Most the information I dervied could have been attained via SQL Server or Tableau without using the other, so I probably would have stuck to one or the other technology to do all the analysis. Regardless it was fun to make some charts and write some queries!
 
