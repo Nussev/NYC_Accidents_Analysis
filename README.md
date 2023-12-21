@@ -1,4 +1,4 @@
-# <p align='center'>Analysis of New York City Traffic Accidents (Jan 2020 - Aug 2023)</p>
+# <p align='center'>Analysis of New York City Traffic Accidents (Jan 2020 - Apr 2023)</p>
 
 ## Overview:
 
@@ -53,7 +53,7 @@ D. What are the different levels of severity and distribution amongst them?
 
 ## Insights
 
-1. The majority of accidents occurred in the from Janaury - March (28.88%). It is important to note that this number is not fully up to date since data was only derived into April of 2023.
+1. The majority of accidents occurred in the from Janaury - March (28.88%). It is important to note that this number is not fully up to date since data was only derived through April 2023.
 2. Accidents and Injuries occurred most often from 4pm to 5pm, with unusual spikes at 12am & 8am.
 3. Brooklyn had the largest number of accdidents (76,416), with Queens having the second largest number of accidents (63,751).
 4. 91.38% of all accidents were classified as 'Low' severity, only having 0 to 1 victim (Injured or Killed) in the accident.
